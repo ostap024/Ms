@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Moq;
+ 
+
 
 namespace MyCalcLib.Tests.Nunit
 {
@@ -61,6 +64,8 @@ namespace MyCalcLib.Tests.Nunit
         [Test]
         public void Division_4by2_6returned()
         {
+            
+            var mock = new Mock<Triangle>();
             //arrange
             double x = 4;
             double y = 2;
@@ -73,5 +78,8 @@ namespace MyCalcLib.Tests.Nunit
             //assert
             Assert.AreEqual(expected, actual);
         }
+
+
+        
     }
 }
