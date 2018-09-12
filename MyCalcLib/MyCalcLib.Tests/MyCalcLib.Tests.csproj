@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\MyCalcLib.csproj">
+    <ProjectReference Include="..\MyCalcLib\MyCalcLib.csproj">
       <Project>{c125b9cb-28d9-4a92-b049-39424568d71c}</Project>
       <Name>MyCalcLib</Name>
     </ProjectReference>
